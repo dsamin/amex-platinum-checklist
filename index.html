@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amex Platinum Benefits Checklist — 2026</title>
+<style>
+  :root{
+    --bg:#0b1020; --panel:#121a2e; --panel2:#0f1626; --line:#243049;
+    --ink:#e8edf7; --muted:#9aa7c2; --gold:#c8a24a; --gold2:#e7c878;
+    --green:#37c97a; --red:#ff5d6c; --amber:#ffb13d; --blue:#5aa9ff;
+    --chip:#1b2742;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0b1020,#0a0e1a 60%); color:var(--ink); line-height:1.5;
+  }
+  .wrap{max-width:1180px; margin:0 auto; padding:28px 20px 80px;}
+  header.top{
+    border:1px solid var(--line); border-radius:18px; padding:24px 26px;
+    background:linear-gradient(135deg,#141d33,#0e1626);
+    display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between;
+  }
+  .brand{display:flex; align-items:center; gap:16px}
+  .plat{
+    width:64px;height:42px;border-radius:7px;flex:none;
+    background:linear-gradient(135deg,#d7dce4,#aeb6c4 55%,#8b94a6);
+    box-shadow:inset 0 1px 0 #fff, 0 6px 18px rgba(0,0,0,.4);
+    position:relative;border:1px solid #cfd5df;
+  }
+  .plat:after{content:"PLATINUM";position:absolute;bottom:5px;left:7px;font-size:7px;letter-spacing:1px;color:#3a4254;font-weight:700}
+  h1{font-size:23px; margin:0 0 3px}
+  .sub{color:var(--muted); font-size:13px}
+  .feepill{font-size:12px;color:var(--gold2)}
+  .stats{display:flex; gap:14px; flex-wrap:wrap}
+  .stat{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:12px 16px; min-width:120px}
+  .stat .n{font-size:21px; font-weight:700}
+  .stat .l{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px}
+  .stat .n.green{color:var(--green)} .stat .n.gold{color:var(--gold2)} .stat .n.red{color:var(--red)}
+
+  .progwrap{margin:20px 0 4px}
+  .progbar{height:13px;background:#0c1322;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+  .progfill{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--green));transition:width .4s ease}
+  .progmeta{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:6px}
+
+  .alert{
+    margin:22px 0; border:1px solid #5a2230; border-radius:16px; overflow:hidden;
+    background:linear-gradient(135deg,#2a121a,#1a0d14);
+  }
+  .alert h2{margin:0; padding:16px 20px; font-size:16px; display:flex; align-items:center; gap:10px; border-bottom:1px solid #46202c}
+  .alert h2 .dot{width:9px;height:9px;border-radius:99px;background:var(--red);box-shadow:0 0 0 4px rgba(255,93,108,.18);animation:pulse 1.6s infinite}
+  @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(255,93,108,0)}}
+  .alert .sub2{padding:4px 20px 0;font-size:12px;color:#e9b8c0}
+  .todaygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;padding:16px 20px}
+  .tcard{background:#180e15;border:1px solid #4a2330;border-radius:12px;padding:13px 14px}
+  .tcard .amt{font-size:18px;font-weight:700;color:var(--gold2)}
+  .tcard .nm{font-weight:600;margin:1px 0 6px}
+  .tcard .how{font-size:12px;color:#d7c0c6}
+  .tcard .tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.4px;padding:2px 7px;border-radius:99px;margin-top:8px;text-transform:uppercase}
+  .tag.gone{background:#3a1018;color:#ff8f9b;border:1px solid #6a2030}
+  .tag.q{background:#2a1c0a;color:var(--amber);border:1px solid #5a3c12}
+  .tag.m{background:#0e2233;color:var(--blue);border:1px solid #1d456b}
+
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:26px 0 12px}
+  .controls h2{font-size:18px;margin:0 12px 0 0}
+  .filterbtn{background:var(--chip);border:1px solid var(--line);color:var(--muted);padding:7px 13px;border-radius:99px;font-size:12.5px;cursor:pointer;transition:.15s}
+  .filterbtn:hover{color:var(--ink);border-color:#3a4a6b}
+  .filterbtn.active{background:var(--gold);color:#1a1407;border-color:var(--gold);font-weight:600}
+  .resetbtn{margin-left:auto;background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 13px;border-radius:8px;font-size:12px;cursor:pointer}
+
+  table{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
+  .tablecard{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel)}
+  thead th{
+    text-align:left;padding:13px 14px;background:#0e1626;color:var(--muted);
+    font-size:11px;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--line);position:sticky;top:0
+  }
+  tbody td{padding:14px;border-bottom:1px solid #1b2640;vertical-align:top}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr.done{opacity:.5}
+  tbody tr.done .bname{text-decoration:line-through}
+  tr.exp-today{background:rgba(255,93,108,.06)}
+  .bname{font-weight:650;font-size:14.5px}
+  .bdesc{color:var(--muted);font-size:12px;margin-top:3px;max-width:330px}
+  .val{font-weight:700;color:var(--gold2);white-space:nowrap}
+  .val small{display:block;color:var(--muted);font-weight:400;font-size:11px}
+  .cad{font-size:12px}
+  .reset{font-size:12px;color:var(--muted)}
+  .reset.hot{color:var(--red);font-weight:600}
+  .where{font-size:12px;color:#bcc8e2;max-width:240px}
+  .where b{color:var(--ink)}
+  .chk{width:22px;height:22px;cursor:pointer;accent-color:var(--green)}
+  .badge{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.4px;padding:2px 6px;border-radius:5px;text-transform:uppercase;margin-left:6px}
+  .badge.today{background:#3a1018;color:#ff8f9b}
+  .badge.enroll{background:#102a1c;color:#5fd99a}
+
+  .section-h{font-size:18px;margin:34px 0 12px}
+  .perks{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+  .perk{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--panel2)}
+  .perk h3{margin:0 0 5px;font-size:14px}
+  .perk p{margin:0;font-size:12.5px;color:var(--muted)}
+  a{color:var(--gold2)}
+  footer{margin-top:40px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+  .links a{margin-right:14px;font-size:12px}
+  @media(max-width:760px){
+    .bdesc,.where{max-width:none}
+    thead{display:none}
+    table,tbody,tr,td{display:block;width:100%}
+    tbody tr{border-bottom:1px solid var(--line);padding:6px 0}
+    tbody td{border:none;padding:6px 14px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="plat"></div>
+      <div>
+        <h1>Amex Platinum — Benefits Maximizer</h1>
+        <div class="sub">Check off each credit as you use it · <span class="feepill">$895 annual fee · $3,084 in credits to capture</span></div>
+        <div class="sub" id="todayLine"></div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n gold" id="sTotal">$3,084</div><div class="l">Total credits</div></div>
+      <div class="stat"><div class="n green" id="sUsed">$0</div><div class="l">Marked used</div></div>
+      <div class="stat"><div class="n red" id="sToday">$565</div><div class="l">Expiring today</div></div>
+    </div>
+  </header>
+
+  <div class="progwrap">
+    <div class="progbar"><div class="progfill" id="prog"></div></div>
+    <div class="progmeta"><span id="progTxt">$0 of $3,084 captured</span><span>Your checkmarks save automatically on this device</span></div>
+  </div>
+
+  <!-- EXPIRING TODAY -->
+  <section class="alert">
+    <h2><span class="dot"></span> Expiring TODAY — Tuesday, June 30, 2026 · up to $565</h2>
+    <div class="sub2">These reset or disappear at end of day. The Saks credit is gone <b>forever</b> after tonight. Knock these out first.</div>
+    <div class="todaygrid">
+      <div class="tcard">
+        <div class="amt">$300</div><div class="nm">Hotel Credit — 1st half</div>
+        <div class="how">BOOK (prepaid) a Fine Hotels + Resorts or Hotel Collection stay through Amex Travel by tonight. The stay itself can be later in the year — you only need to book by 6/30.</div>
+        <span class="tag q">Semiannual · book by 6/30</span>
+      </div>
+      <div class="tcard">
+        <div class="amt">$100</div><div class="nm">Resy Dining — Q2</div>
+        <div class="how">Pay with your Platinum at any Resy-affiliated restaurant (no booking needed). One dinner usually covers it.</div>
+        <span class="tag q">Quarterly · resets 7/1</span>
+      </div>
+      <div class="tcard">
+        <div class="amt">$75</div><div class="nm">Lululemon — Q2</div>
+        <div class="how">Spend at a Lululemon store or lululemon.com. Beauty/accessories/gift cards-in-store count. Easiest: order online tonight.</div>
+        <span class="tag q">Quarterly · resets 7/1</span>
+      </div>
+      <div class="tcard">
+        <div class="amt">$50</div><div class="nm">Saks Fifth Avenue — LAST EVER</div>
+        <div class="how">Benefit ends July 1, 2026 permanently. Buy anything $50+ at saks.com (beauty/candles/small gifts hit $50 easily).</div>
+        <span class="tag gone">Ends forever 7/1</span>
+      </div>
+      <div class="tcard">
+        <div class="amt">$25</div><div class="nm">Digital Entertainment — June</div>
+        <div class="how">Auto-credits if a qualifying streaming/news charge (Disney+, Hulu, YouTube TV, Peacock, NYT, WSJ…) posts this month. Check it actually posted.</div>
+        <span class="tag m">Monthly · resets 7/1</span>
+      </div>
+      <div class="tcard">
+        <div class="amt">$15</div><div class="nm">Uber Cash — June</div>
+        <div class="how">Use this month's $15 on an Uber ride or Uber Eats order before midnight — it does not roll over.</div>
+        <span class="tag m">Monthly · resets 7/1</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL CHECKLIST -->
+  <div class="controls">
+    <h2>Full Benefits Checklist</h2>
+    <button class="filterbtn active" data-f="all">All</button>
+    <button class="filterbtn" data-f="today">Expiring today</button>
+    <button class="filterbtn" data-f="monthly">Monthly</button>
+    <button class="filterbtn" data-f="quarterly">Quarterly</button>
+    <button class="filterbtn" data-f="semiannual">Semiannual</button>
+    <button class="filterbtn" data-f="annual">Annual</button>
+    <button class="resetbtn" id="resetChecks">Clear all checkmarks</button>
+  </div>
+
+  <div class="tablecard">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:34px">✓</th>
+          <th>Benefit</th>
+          <th>Value</th>
+          <th>Resets / Deadline</th>
+          <th>Where to check if you've used it &amp; how to use it</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <!-- NON-CREDIT PERKS -->
+  <h2 class="section-h">Other perks worth using (no statement credit, but valuable)</h2>
+  <div class="perks">
+    <div class="perk"><h3>Global Lounge Collection</h3><p>1,550+ lounges: Centurion Lounges, Priority Pass Select (enroll), Delta Sky Club (10 visits/yr on Delta flights), Plaza Premium &amp; partners. Add card to your mobile wallet / Amex app for entry.</p></div>
+    <div class="perk"><h3>Global Entry / TSA PreCheck</h3><p>Up to $120 statement credit for the application fee, once every ~4 years. Pay the app fee with your Platinum and it auto-credits.</p></div>
+    <div class="perk"><h3>Fine Hotels + Resorts extras</h3><p>Beyond the $600 credit: free breakfast, room upgrades, late checkout, and a ~$100 property credit per FHR stay. Stack with the hotel credit above.</p></div>
+    <div class="perk"><h3>Hotel elite status</h3><p>Complimentary Hilton Honors Gold &amp; Marriott Bonvoy Gold (enrollment required in the Amex Benefits section).</p></div>
+    <div class="perk"><h3>Rental car status</h3><p>Hertz President's Circle, Avis Preferred, National Emerald Club Executive — enroll once via Amex.</p></div>
+    <div class="perk"><h3>Purchase &amp; travel protections</h3><p>Cell phone protection (pay your bill with the card), baggage insurance, trip delay/cancellation, extended warranty, return protection.</p></div>
+    <div class="perk"><h3>Amex Offers</h3><p>Rotating add-on deals (spend $X get $Y). Open the Amex app → Offers and "add to card" the ones you'll use — separate from the credits above.</p></div>
+    <div class="perk"><h3>Membership Rewards earning</h3><p>5x on flights booked direct/Amex Travel and on prepaid hotels via Amex Travel. Use the card for these to maximize points.</p></div>
+  </div>
+
+  <footer>
+    <div class="links">
+      <strong>Quick links:</strong>
+      <a href="https://global.americanexpress.com/benefits" target="_blank" rel="noopener">Amex Benefits Dashboard</a>
+      <a href="https://www.americanexpress.com/en-us/travel/" target="_blank" rel="noopener">Amex Travel (hotel credit)</a>
+      <a href="https://resy.com" target="_blank" rel="noopener">Resy</a>
+      <a href="https://www.saks.com" target="_blank" rel="noopener">Saks</a>
+      <a href="https://shop.lululemon.com" target="_blank" rel="noopener">Lululemon</a>
+    </div>
+    <p style="margin-top:12px">How to verify usage: open the <b>Amex app</b> or americanexpress.com → tap your Platinum card → <b>Benefits</b> for enrollment/usage, and <b>Statement &amp; Activity</b> to confirm a credit posted. Many credits require a one-time <b>enrollment</b> (Equinox, Oura, Airline, Digital Entertainment, CLEAR, Saks, Uber) — if you've never enrolled, the credit won't trigger.</p>
+    <p style="margin-top:10px;color:#6f7c98">Benefit details current as of June 2026 and reflect the 2025–26 Platinum refresh ($895 fee). Amex terms change — always confirm exact amounts and eligible merchants in your own Amex Benefits dashboard. Not affiliated with American Express. Built for personal tracking.</p>
+  </footer>
+</div>
+
+<script>
+const benefits = [
+  // cadence: monthly|quarterly|semiannual|annual ; today:true => expires 6/30
+  {id:"hotel", name:"Hotel Credit (FHR / The Hotel Collection)", desc:"Prepaid stays booked through Amex Travel. THC needs 2-night min. FHR adds breakfast, upgrades & ~$100 property credit.", val:"$300", per:"/half ($600/yr)", num:300, cad:"semiannual", reset:"Book by Jun 30 (H1) · resets Jul 1", today:true, where:"<b>Amex Travel</b> → book prepaid FHR/THC. Confirm credit in <b>Statement Activity</b>."},
+  {id:"resy", name:"Resy Dining Credit", desc:"Pay with Platinum at 10,000+ Resy restaurants. No reservation required.", val:"$100", per:"/quarter ($400/yr)", num:100, cad:"quarterly", reset:"Q2 ends Jun 30 · resets Jul 1", today:true, where:"Just dine & pay. Check <b>Statement Activity</b> for the auto-credit."},
+  {id:"lulu", name:"Lululemon Credit", desc:"Lululemon stores (not outlets) or lululemon.com.", val:"$75", per:"/quarter ($300/yr)", num:75, cad:"quarterly", reset:"Q2 ends Jun 30 · resets Jul 1", today:true, where:"Shop & pay with Platinum. Auto-credits; verify in <b>Statement Activity</b>."},
+  {id:"saks", name:"Saks Fifth Avenue Credit", desc:"$50 at Saks / saks.com. ENDS PERMANENTLY July 1, 2026 — no second-half credit.", val:"$50", per:"/half — ENDING", num:50, cad:"semiannual", reset:"GONE after Jun 30 forever", today:true, where:"Enroll in <b>Benefits</b> first, then spend $50+ at Saks. Auto-credits."},
+  {id:"digital", name:"Digital Entertainment Credit", desc:"Disney+, Hulu, YouTube TV/Premium, Peacock, Paramount+, ESPN+, NYT, WSJ.", val:"$25", per:"/month ($300/yr)", num:25, cad:"monthly", reset:"June resets Jul 1", today:true, where:"Enroll once in <b>Benefits</b>. Auto-credits when a qualifying charge posts."},
+  {id:"ubercash", name:"Uber Cash", desc:"$15/mo ($20 in Dec). Uber rides or Uber Eats. Does not roll over.", val:"$15", per:"/month ($200/yr)", num:15, cad:"monthly", reset:"June resets Jul 1", today:true, where:"Add Platinum to your <b>Uber app</b> wallet. Cash appears monthly."},
+  {id:"clear", name:"CLEAR Plus Credit", desc:"Covers CLEAR Plus airport security membership.", val:"$209", per:"/year", num:209, cad:"monthly", reset:"Auto monthly (annual cap)", today:false, where:"Pay CLEAR with Platinum. Enroll in <b>Benefits</b>; auto-credits."},
+  {id:"walmart", name:"Walmart+ Credit", desc:"Monthly Walmart+ membership (incl. bundled Paramount+/Peacock).", val:"~$155", per:"/year", num:155, cad:"monthly", reset:"Auto monthly", today:false, where:"Pay Walmart+ monthly fee with Platinum. Auto-credits each month."},
+  {id:"equinox", name:"Equinox Credit", desc:"Equinox club membership or Equinox+ digital subscription.", val:"$300", per:"/year", num:300, cad:"annual", reset:"Calendar year · Dec 31", today:false, where:"Enroll in <b>Benefits</b>, then charge Equinox to the card."},
+  {id:"oura", name:"Oura Ring Credit", desc:"Toward an Oura Ring purchase or Oura subscription.", val:"$200", per:"/card year", num:200, cad:"annual", reset:"Cardmember anniversary", today:false, where:"Enroll in <b>Benefits</b>, then buy Oura with the card."},
+  {id:"airline", name:"Airline Fee Credit", desc:"Incidental fees (bags, seats, in-flight, lounge passes) on ONE chosen airline.", val:"$200", per:"/year", num:200, cad:"annual", reset:"Calendar year · Dec 31", today:false, where:"Pick airline in <b>Benefits</b> (set in Jan). Pay incidentals with card."},
+  {id:"uberone", name:"Uber One Credit", desc:"Covers the Uber One membership fee (separate from monthly Uber Cash).", val:"$120", per:"/year", num:120, cad:"annual", reset:"Cardmember year", today:false, where:"Subscribe to <b>Uber One</b> with Platinum on file. Auto-credits."},
+];
+
+const STORE="amexPlatChecks_2026";
+let checks = {};
+try{ checks = JSON.parse(localStorage.getItem(STORE)||"{}"); }catch(e){ checks={}; }
+
+const cadLabel={monthly:"Monthly",quarterly:"Quarterly",semiannual:"Semiannual",annual:"Annual"};
+const rowsEl=document.getElementById("rows");
+let filter="all";
+
+function render(){
+  rowsEl.innerHTML="";
+  benefits.forEach(b=>{
+    const show = filter==="all" || (filter==="today"&&b.today) || filter===b.cad;
+    if(!show) return;
+    const tr=document.createElement("tr");
+    tr.className = (checks[b.id]?"done ":"") + (b.today?"exp-today":"");
+    const enrollNeeded=["saks","digital","equinox","oura","airline","clear"].includes(b.id);
+    tr.innerHTML=`
+      <td><input type="checkbox" class="chk" data-id="${b.id}" ${checks[b.id]?"checked":""}></td>
+      <td>
+        <div class="bname">${b.name}${b.today?'<span class="badge today">Today</span>':''}${enrollNeeded?'<span class="badge enroll">Enroll</span>':''}</div>
+        <div class="bdesc">${b.desc}</div>
+        <div class="cad" style="margin-top:6px;color:var(--muted)">${cadLabel[b.cad]}</div>
+      </td>
+      <td class="val">${b.val}<small>${b.per}</small></td>
+      <td class="reset ${b.today?'hot':''}">${b.reset}</td>
+      <td class="where">${b.where}</td>`;
+    rowsEl.appendChild(tr);
+  });
+  document.querySelectorAll(".chk").forEach(c=>c.addEventListener("change",onCheck));
+  updateStats();
+}
+function onCheck(e){
+  checks[e.target.dataset.id]=e.target.checked;
+  localStorage.setItem(STORE,JSON.stringify(checks));
+  render();
+}
+function updateStats(){
+  const total=benefits.reduce((s,b)=>s+b.num,0);
+  const used=benefits.filter(b=>checks[b.id]).reduce((s,b)=>s+b.num,0);
+  document.getElementById("sUsed").textContent="$"+used.toLocaleString();
+  const pct=Math.round(used/total*100);
+  document.getElementById("prog").style.width=pct+"%";
+  document.getElementById("progTxt").textContent=`$${used.toLocaleString()} of $${total.toLocaleString()} captured (${pct}%)`;
+}
+document.querySelectorAll(".filterbtn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".filterbtn").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active"); filter=btn.dataset.f; render();
+  });
+});
+document.getElementById("resetChecks").addEventListener("click",()=>{
+  if(confirm("Clear all checkmarks?")){checks={};localStorage.removeItem(STORE);render();}
+});
+document.getElementById("todayLine").textContent="Today: "+new Date().toLocaleDateString(undefined,{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+render();
+</script>
+</body>
+</html>
